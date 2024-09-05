@@ -1,1 +1,79 @@
 @import './base.css';
+body{
+    font-family: var(--mainFont);
+    background-color: #eee;
+}
+.header{
+    padding: 20px 0px;
+    background-color: #fff;
+}
+.header .logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+}
+.header .logo img{
+    width: 35px;
+}
+.header .logo a{
+    color: var(--mainColor);
+}
+.menue{
+    display: none;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.navbar ul li a{
+    color: #101928;
+}
+.navbar ul li .active{
+    font-weight: 800;
+}
+.athentications{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.athentications a{
+    border-radius : 10px;
+    padding: 5.3px 30.1px;
+    font-weight: 700;
+    font-family: var(--subFont)
+}
+.athentications .login{
+    border: 2px solid var(--mainColor);
+    color: var(--mainColor);
+}
+.athentications .register{
+    border: 2px solid var(--mainColor);
+    background-color: var(--mainColor);
+    color: white;
+}
+
+/* header media */
+@media screen and (max-width:992px){
+    .navbar,
+    .athentications {
+        display: none;
+    }
+    .menue{
+        display: block;
+        order: 2;
+    }
+}
+@media screen and (max-width:576px){
+    .container{
+        width: calc(100% - 50px );
+        margin: auto;
+    }
+    .header .logo img{
+        width: 20px;
+    }
+    .header .logo a{
+        font-size: 14px;
+    }
+}
