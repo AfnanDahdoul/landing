@@ -16,6 +16,10 @@ a{
 ul{
     list-style-type: none;
 }
+button{
+    background-color: transparent;
+    border: none;
+}
 .container{
     width: calc(100% - 120px );
     margin: auto;
